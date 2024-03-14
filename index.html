@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Build a Country: Budget Crisis Game</h1>
+        <section id="budget-display">
+            <h2>Total Budget</h2>
+            <p id="current-budget">$1,000,000,000,000</p>
+        </section>
+        
+        <section id="budget-allocation">
+            <h2>Budget Allocation</h2>
+            <form id="allocation-form">
+                <!-- Corrected healthcare sector -->
+                <div class="form-group">
+                    <label for="healthcare">Healthcare</label>
+                    <input type="number" id="healthcare" name="healthcare" min="0">
+                </div>
+                <div class="form-group">
+                    <label for="education">Education</label>
+                    <input type="number" id="education" name="education" min="0">
+                </div>
+                <div class="form-group">
+                    <label for="defense">Defense</label>
+                    <input type="number" id="defense" name="defense" min="0">
+                </div>
+                <div class="form-group">
+                    <label for="infrastructure">Infrastructure</label>
+                    <input type="number" id="infrastructure" name="infrastructure" min="0">
+                </div>
+                <div class="form-group">
+                    <label for="technology">Technology and Innovation</label>
+                    <input type="number" id="technology" name="technology" min="0">
+                </div>
+                <div class="form-group">
+                    <label for="environment">Environmental Protection</label>
+                    <input type="number" id="environment" name="environment" min="0">
+                </div>
+                <div class="form-group">
+                    <label for="socialWelfare">Social Welfare</label>
+                    <input type="number" id="socialWelfare" name="socialWelfare" min="0">
+                </div>
+                <div class="form-group">
+                    <label for="economicDevelopment">Economic Development</label>
+                    <input type="number" id="economicDevelopment" name="economicDevelopment" min="0">
+                </div>
+                <div class="form-group">
+                    <label for="publicSafety">Public Safety</label>
+                    <input type="number" id="publicSafety" name="publicSafety" min="0">
+                </div>
+            </form>
+            <button type="button" id="rollDiceButton" onclick="calculateArmorAndRollDice()">Allocate and Face Crisis</button>
+        </section>
+        <section id="crisis-result">
+            <h2>Crisis Outcome</h2>
+            <p id="outcome-description"></p>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
